@@ -1,4 +1,4 @@
-import VectorIcon from "../icon/VectorIcon.jsx";
+import { VectorIcon, DotIcon } from "../icon/index.jsx";
 
 function TrafficInfo() {
   const trafficData = [
@@ -46,7 +46,7 @@ function TrafficInfo() {
       stations: [
         {
           station: "",
-          info: "CITY PARKING 城市車旅停車場 希爾頓站 100$/1hr",
+          info: "CITY PARKING停車場(希爾頓站) 100$/1hr",
           link: "https://www.google.com/maps/place/CITY+PARKING+%E5%9F%8E%E5%B8%82%E8%BB%8A%E6%97%85%E5%81%9C%E8%BB%8A%E5%A0%B4+%E5%B8%8C%E7%88%BE%E9%A0%93%E7%AB%99/@25.0512901,121.5228587,21z/data=!4m6!3m5!1s0x3442a9989a0e1eed:0xf79ba2d0f96e12a1!8m2!3d25.0512897!4d121.5228629!16s%2Fg%2F11pts6w98s?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D",
         },
         {
@@ -65,14 +65,17 @@ function TrafficInfo() {
   return (
     <div className="bg-light my-5">
       <div className="container px-4 py-5">
-        <h2 className="text-center fw-bold">交通資訊</h2>
+        <h2 className="text-center fw-bold mb-5">
+          {/* data-aos="fade-up" */}
+          交通資訊
+        </h2>
         {trafficData.map((item) => (
-          <div className="d-flex">
+          <div key={item.id} className="d-flex mb-4">
             <div className="d-flex me-1" style={{ marginTop: "6px" }}>
               <VectorIcon />
             </div>
             <div className="w-100">
-              <h5 className="fw-bold mb-0">{item.traffic}</h5>
+              <h5 className="fw-bold mb-3">{item.traffic}</h5>
               {item.type !== "parking" ? (
                 item.stations.map((station, index) => (
                   <div key={index}>
@@ -85,26 +88,31 @@ function TrafficInfo() {
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.489646723767!2d121.5228118!3d25.0513881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9835aafbcff%3A0xa0760440d9d36387!2z5Y-w5YyX5Lit5bGx5Lmd5pix5biM54i-6aCT6YC45p6X6YWS5bqX!5e0!3m2!1szh-TW!2stw!4v1771902913109!5m2!1szh-TW!2stw"
                         height="300"
                         className="w-100 rounded-2"
-                        style={{ border: 0 }}
-                        allowfullscreen=""
+                        style={{ border: 0, marginTop: -10 }}
+                        allowFullScreen=""
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                        referrerPolicy="no-referrer-when-downgrade"
                       ></iframe>
                     )}
                   </div>
                 ))
               ) : (
                 <div>
+                  {/* Parking Data */}
                   {item.stations.map((station, index) => (
-                    <a
-                      key={index}
-                      href={station.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="d-flex text-decoration-underline"
-                    >
-                      {station.info}
-                    </a>
+                    <div className="d-flex" key={index}>
+                      <div>
+                        <DotIcon />
+                      </div>
+                      <a
+                        href={station.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="d-flex text-decoration-underline"
+                      >
+                        {station.info}
+                      </a>
+                    </div>
                   ))}
                 </div>
               )}
