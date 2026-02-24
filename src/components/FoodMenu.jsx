@@ -18,7 +18,7 @@ function FoodMenu() {
     {
       id: 3,
       type: "位上主餐",
-      foods: ["燒烤沙朗牛排佐松露野菇醬", "德式芥末豬腳佐蜂蜜芥末醬"],
+      foods: ["燒烤沙朗牛排佐松露野菇醬 or", "德式芥末豬腳佐蜂蜜芥末醬"],
     },
     {
       id: 4,
@@ -35,24 +35,23 @@ function FoodMenu() {
       ],
     },
     { id: 5, type: "甜點水果", foods: ["季節鮮水果4種", "甜點6種"] },
-    { id: 6, type: "沁涼饮品", foods: ["果汁", "咖啡", "茶"] },
+    { id: 6, type: "沁涼饮品", foods: ["紅酒", "果汁", "咖啡", "茶"] },
   ];
   return (
-    <>
-      <div className="container px-4 py-5 text-center">
-        <h2 className="fw-bold mb-5">Menu</h2>
-        {foodData.map((data) => (
-          <div key={data.id} className="mb-4">
-            <h5>{data.type}</h5>
-            {data.foods.map((item, index) => (
-              <p key={index} className="mb-1">
-                {item}
-              </p>
-            ))}
-          </div>
-        ))}
-      </div>
-    </>
+    <div className="container bg-light py-5 text-center">
+      <h2 className="fw-bold ">Menu</h2>
+      <p className="mb-5">（半自助式饗宴）</p>
+      {foodData.map((data) => (
+        <div key={data.id} className="mb-4">
+          <h5>{data.type}</h5>
+          {data.foods.map((item, index) => (
+            <p key={index} className="mb-1">
+              {item}
+            </p>
+          ))}
+        </div>
+      ))}
+    </div>
   );
 }
 

@@ -35,7 +35,7 @@ function TrafficInfo() {
       stations: [
         {
           station: "",
-          info: "點擊下方地圖導航至飯店。",
+          info: "點擊下方「顯示詳細地圖」查看飯店地址。",
         },
       ],
     },
@@ -100,7 +100,7 @@ function TrafficInfo() {
                 <div>
                   {/* Parking Data */}
                   {item.stations.map((station, index) => (
-                    <div className="d-flex" key={index}>
+                    <div className="d-flex ms-n5" key={index}>
                       <div>
                         <DotIcon />
                       </div>
@@ -108,7 +108,7 @@ function TrafficInfo() {
                         href={station.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="d-flex text-decoration-underline"
+                        className="d-flex text-decoration-underline mb-2"
                       >
                         {station.info}
                       </a>
