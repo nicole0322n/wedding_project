@@ -7,8 +7,9 @@ import "aos/dist/aos.css";
 import Envelopes from "./components/Envelopes.jsx";
 import Letters from "./components/Letters.jsx";
 import TrafficInfo from "./components/TrafficInfo.jsx";
-import FoodMenu from "./components/FoodMenu.jsx";
 import Pictures from "./components/Pictures.jsx";
+import Seat from "./components/Seat.jsx";
+import FoodMenu from "./components/FoodMenu.jsx";
 import Footer from "./components/Footer.jsx";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Letters />
       <TrafficInfo />
       <Pictures />
+      <Seat />
       <FoodMenu />
       <Footer />
     </>
