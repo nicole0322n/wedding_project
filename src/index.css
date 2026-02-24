@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap");
+body {
+  font-family: "Chiron GoRound TC", "Noto Serif TC", serif;
+  -webkit-font-smoothing: antialiased; /* 讓字體在 Mac 上更平滑 */
+  background-color: #f3efeb;
+}
