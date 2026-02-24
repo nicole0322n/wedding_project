@@ -1,15 +1,27 @@
-// import { useState } from "react";
-import "./custom.scss";
-import Footer from "./components/Footer.jsx";
+import { useEffect } from "react";
+
+import AOS from "aos";
+
+import "aos/dist/aos.css";
+import Envelopes from "./components/Envelopes.jsx";
+import Letters from "./components/Letters.jsx";
 import TrafficInfo from "./components/TrafficInfo.jsx";
+import Pictures from "./components/Pictures.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
-  // const [count, setCount] = useState(0);
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // 動畫時間
+      once: true, // 是否只執行一次
+    });
+  }, []);
   return (
     <>
-      <h1>廖慶武＆黃婉暄</h1>
+      <Envelopes />
+      <Letters />
       <TrafficInfo />
+      <Pictures />
       <Footer />
     </>
   );
