@@ -1,15 +1,15 @@
-// --- 2. 覆寫 Bootstrap 全域設定 ---
-$primary: #5d604d;
-$secondary: #7b8062;
-$info: #838967;
-$light: #e7eadb;
-$white: #f5f5f5;
+// @import "bootstrap/scss/bootstrap"; // 寫法將被淘汰
 
-$body-bg: #f3efeb;
-$body-color: #5d604d;
+@use "bootstrap/scss/bootstrap" with (
+  $primary: #5d604d,
+  $secondary: #7b8062,
+  $info: #838967,
+  $light: #e7eadb,
+  $white: #f5f5f5,
 
-// --- 3. 更多進階設定 (讓組件更優雅) ---
-$enable-shadows: true; // 開啟陰影，卡片會更有質感
+  $body-bg: #f3efeb,
+  $body-color: #5d604d,
 
-// --- 4. 引入 Bootstrap SCSS ---
-@import "bootstrap/scss/bootstrap";
+  // 更多進階設定 (讓組件更優雅)
+  $enable-shadows: true // 開啟陰影，卡片會更有質感
+);
