@@ -63,7 +63,7 @@ function TrafficInfo() {
     },
   ];
   return (
-    <div className="bg-light my-5">
+    <div className="bg-light">
       <div className="container px-4 py-5">
         <h2 className="text-center fw-bold mb-5">
           {/* data-aos="fade-up" */}
