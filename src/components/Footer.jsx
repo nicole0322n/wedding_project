@@ -4,7 +4,7 @@ function Footer() {
   return (
     <Nav
       className="navbar navbar-secondary bg-secondary d-flex align-items-center justify-content-center"
-      style={{ height: "86px" }}
+      style={{ height: "96px" }}
     >
       <div className="container-fluid d-flex justify-content-center">
         <span className="text-white">Thanks for coming to our wedding</span>

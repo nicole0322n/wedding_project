@@ -29,9 +29,9 @@ export default function EnvelopesImage(props) {
           width="1457"
           height="639"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -64,9 +64,9 @@ export default function EnvelopesImage(props) {
           width="1488"
           height="502.501"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -100,8 +100,8 @@ export default function EnvelopesImage(props) {
           y2="631.489"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.456731" stop-color="#838967" />
-          <stop offset="1" stop-color="#5D604D" />
+          <stop offset="0.456731" stopColor="#838967" />
+          <stop offset="1" stopColor="#5D604D" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_42_216"
@@ -111,8 +111,8 @@ export default function EnvelopesImage(props) {
           y2="457.489"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7B8062" />
-          <stop offset="1" stop-color="#7B8062" />
+          <stop stopColor="#7B8062" />
+          <stop offset="1" stopColor="#7B8062" />
         </linearGradient>
       </defs>
     </svg>

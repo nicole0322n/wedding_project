@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
 import AOS from "aos";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import "aos/dist/aos.css";
 import Envelopes from "./components/Envelopes.jsx";

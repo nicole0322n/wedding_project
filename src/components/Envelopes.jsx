@@ -1,4 +1,4 @@
-import EnvelopesImage from "../assets/image/EnvelopesImage.jsx";
+import EnvelopesImage from "../../public/image/EnvelopesImage.jsx";
 
 function Envelopes() {
   return (
