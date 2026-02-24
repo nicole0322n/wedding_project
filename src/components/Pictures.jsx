@@ -31,7 +31,7 @@ function Pictures() {
               className={`carousel-item ${index === 0 ? "active" : ""}`}
             >
               <img
-                src={`public/image/${pic.fileName}`}
+                src={`./image/${pic.fileName}`}
                 className="d-block w-100"
                 alt={`wedding-picture-${pic.id}`}
               />
