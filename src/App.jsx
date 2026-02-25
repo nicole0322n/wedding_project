@@ -21,13 +21,15 @@ function App() {
   }, []);
   return (
     <>
-      <Envelopes />
-      <Letters />
-      <TrafficInfo />
-      <Pictures />
-      <Seat />
-      <FoodMenu />
-      <Footer />
+      <div className="outline-width">
+        <Envelopes />
+        <Letters />
+        <TrafficInfo />
+        <Pictures />
+        <Seat />
+        <FoodMenu />
+        <Footer />
+      </div>
     </>
   );
 }

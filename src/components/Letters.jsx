@@ -6,7 +6,7 @@ function Letters() {
         className="card-img"
         alt="LettersImage"
       />
-      <div className="card-img-overlay text-center">
+      <div className="card-img-overlay text-center letter-word">
         <img
           src="./image/Letter-title.svg"
           className="my-2"

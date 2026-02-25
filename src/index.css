@@ -16,3 +16,24 @@ body {
 .card-words {
   max-width: 76%;
 }
+
+@media (min-width: 768px) {
+  body {
+    background-color: #2f321b;
+  }
+  .outline-width {
+    width: 40%;
+    margin: auto;
+    background-color: #f3efeb;
+    box-shadow: 0px 0px 80px black;
+  }
+
+  .letter-word {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+  }
+}
