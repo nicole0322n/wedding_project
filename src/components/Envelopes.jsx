@@ -11,7 +11,6 @@ function Envelopes() {
         <h1
           className="position-absolute  start-50 translate-middle text-white text-center italianno-regular"
           style={{ fontSize: 54, top: "40%" }}
-          data-aos="fade-up"
         >
           Welcome
           <br />
@@ -23,7 +22,6 @@ function Envelopes() {
         <span
           className="position-absolute start-50 translate-middle text-white text-center"
           style={{ bottom: "3%" }}
-          data-aos="fade-up"
         >
           廖慶武＆黃婉暄
           <br />
