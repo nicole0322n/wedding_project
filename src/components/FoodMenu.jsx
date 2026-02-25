@@ -35,7 +35,7 @@ function FoodMenu() {
       ],
     },
     { id: 5, type: "甜點水果", foods: ["季節鮮水果4種", "甜點6種"] },
-    { id: 6, type: "沁涼饮品", foods: ["紅酒", "果汁", "咖啡", "茶"] },
+    { id: 6, type: "沁涼飲品", foods: ["紅酒", "果汁", "咖啡", "茶"] },
   ];
   return (
     <div className="container bg-light py-5 text-center">

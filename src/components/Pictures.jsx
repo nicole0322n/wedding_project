@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import * as bootstrap from "bootstrap";
-
 function Pictures() {
   const picData = [
     { id: 1, fileName: "DSC_3738.jpg" },
@@ -9,14 +6,7 @@ function Pictures() {
     { id: 4, fileName: "DSC_3827.jpg" },
     { id: 5, fileName: "DSC_3780.jpg" },
   ];
-  useEffect(() => {
-    // 透過 ID 抓取元素並初始化
-    const myCarousel = document.querySelector("#carouselExampleControls");
-    new bootstrap.Carousel(myCarousel, {
-      interval: 3000,
-      ride: "carousel",
-    });
-  }, []);
+
   return (
     <>
       <div
