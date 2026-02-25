@@ -12,21 +12,25 @@ function Letters() {
           className="my-2"
           style={{ maxWidth: "56%" }}
           alt="LettersTitle"
+          data-aos="fade-up"
         />
         <img
           src="./image/Letter-people.svg"
           className="card-words my-2"
           alt="LettersPeople"
+          data-aos="fade-up"
         />
         <img
           src="./image/Letter-date.svg"
           className="card-words my-4"
           alt="LettersDate"
+          data-aos="fade-up"
         />
         <img
           src="./image/Letter-map.svg"
           className="card-words mt-2"
           alt="LettersMap"
+          data-aos="fade-up"
         />
       </div>
     </div>

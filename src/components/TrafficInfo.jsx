@@ -65,12 +65,12 @@ function TrafficInfo() {
   return (
     <div className="bg-light">
       <div className="container px-4 py-5">
-        <h2 className="text-center fw-bold mb-5">
+        <h2 className="text-center fw-bold mb-5" data-aos="fade-up">
           {/* data-aos="fade-up" */}
           交通資訊
         </h2>
         {trafficData.map((item) => (
-          <div key={item.id} className="d-flex mb-4">
+          <div key={item.id} className="d-flex mb-4" data-aos="fade-up">
             <div className="d-flex me-1" style={{ marginTop: "6px" }}>
               <VectorIcon />
             </div>

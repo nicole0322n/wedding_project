@@ -39,10 +39,14 @@ function FoodMenu() {
   ];
   return (
     <div className="container bg-light py-5 text-center">
-      <h2 className="fw-bold ">Menu</h2>
-      <p className="mb-5">（半自助式饗宴）</p>
+      <h2 className="fw-bold" data-aos="fade-up">
+        Menu
+      </h2>
+      <p className="mb-5" data-aos="fade-up">
+        （半自助式饗宴）
+      </p>
       {foodData.map((data) => (
-        <div key={data.id} className="mb-4">
+        <div key={data.id} className="mb-4" data-aos="fade-up">
           <h5>{data.type}</h5>
           {data.foods.map((item, index) => (
             <p key={index} className="mb-1">
