@@ -46,7 +46,7 @@ function TrafficInfo() {
       stations: [
         {
           station: "",
-          info: "CITY PARKING停車場(希爾頓站) 100$/1hr",
+          info: "CITY PARKING停車場(希爾頓站) 可折抵",
           link: "https://www.google.com/maps/place/CITY+PARKING+%E5%9F%8E%E5%B8%82%E8%BB%8A%E6%97%85%E5%81%9C%E8%BB%8A%E5%A0%B4+%E5%B8%8C%E7%88%BE%E9%A0%93%E7%AB%99/@25.0512901,121.5228587,21z/data=!4m6!3m5!1s0x3442a9989a0e1eed:0xf79ba2d0f96e12a1!8m2!3d25.0512897!4d121.5228629!16s%2Fg%2F11pts6w98s?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D",
         },
         {
